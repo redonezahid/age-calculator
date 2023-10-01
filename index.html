@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator in HTML5, CSS3 And JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="ac__container">
+        <h2>Calculate your age with birth Date</h2>
+        <h6>This Calculator is designed by <span>"Md Nazmul Haque"</span></h6>
+        <div class="ac__input__field">
+            <div class="ac__fields">
+                <div class="ac__dateField">
+                    <h5>Date</h5>
+                    <input type="number" id="dateField" placeholder="DD">
+                </div>
+                <div class="ac__monthField">
+                    <h5>Month</h5>
+                    <input type="number" id="monthField" placeholder="MM">
+                </div>
+                <div class="ac__yearField">
+                    <h5>Year</h5>
+                    <input type="number" id="yearField" placeholder="YYYY">
+                </div>
+            </div>
+            <button id="calculateDate" onclick="age()">Calculate</button>
+            <div class="ac__birthday__res" id="resFinal">
+                <h4>Your birthday is: </h4>
+                <h6>Your Age is: <span id="yearRes"></span> Years <span id="monthRes"></span> Months <span id="dateRes"></span> Days</h6>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
